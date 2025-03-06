@@ -46,22 +46,27 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Typing animation to hero heading
-    const heroHeading = document.querySelector('.hero-content h1');
-    if(heroHeading) {
-        const text = heroHeading.innerHTML;
-        heroHeading.innerHTML = '';
-        
-        let i = 0;
-        const typeWriter = () => {
-            if (i < text.length) {
-                heroHeading.innerHTML += text.charAt(i);
-                i++;
-                setTimeout(typeWriter, 50);
-            }
-        };
-        
-        setTimeout(typeWriter, 500);
-    }
+    document.addEventListener("DOMContentLoaded", function () {
+        const heroHeading = document.querySelector('.typing-text'); // Target only the second line
+    
+        if (heroHeading) {
+            const text = "I'm Mathias Sant'Anna"; // Text to animate
+            heroHeading.innerHTML = ''; // Clear only the text, keeping structure
+    
+            let i = 0;
+            const typeWriter = () => {
+                if (i < text.length) {
+                    heroHeading.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, 50); // Adjust speed if needed
+                }
+            };
+    
+            setTimeout(typeWriter, 500); // Delay before starting
+        }
+    });
+      
+
 
     // Intersection Observer to trigger animations when elements come into view
     const sections = document.querySelectorAll('.section');

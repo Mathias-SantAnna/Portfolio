@@ -162,6 +162,11 @@ nav {
     line-height: 1.2;
 }
 
+.hero h1 br {
+    display: block; 
+    margin-bottom: 10px;
+}
+
 .hero p {
     font-size: 1.2rem;
     margin-bottom: 30px;

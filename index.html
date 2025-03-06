@@ -10,6 +10,7 @@
     <!-- Add AOS (Animate On Scroll) library -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
 </head>
 <body>
     <!-- Header -->
@@ -25,6 +26,10 @@
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
+                <!-- Added responsive menu button for mobile -->
+                <div class="mobile-menu-btn" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </div>
             </nav>
         </div>
     </header>
@@ -33,11 +38,15 @@
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content" data-aos="fade-right" data-aos-delay="200">
-                <h1>Olá, I'm <span class="highlight">Mathias</span> Sant'Anna</h1>
+                <h1>
+                    Olá,
+                    <br>
+                    <span class="typing-text">I'm <span class="highlight">Mathias</span> Sant'Anna</span>
+                </h1>
                 <p data-aos="fade-up" data-aos-delay="400">Full Stack Developer with a unique blend of <span class="highlight">financial expertise</span> and <span class="highlight">multicultural perspective</span>. I build elegant, functional solutions that bridge the gap between business needs and technical implementation.</p>
-                <div data-aos="fade-up" data-aos-delay="600">
+                <div data-aos="fade-up" data-aos-delay="600" class="cta-buttons">
                     <a href="#contact" class="btn">Contact Me</a>
-                    <a href="#projects" class="btn">My Work</a>
+                    <a href="#projects" class="btn btn-secondary">View My Work</a>
                 </div>
             </div>
         </div>
@@ -49,7 +58,7 @@
             <h2 class="section-title" data-aos="fade-down">About Me</h2>
             <div class="about-grid">
                 <div class="about-image" data-aos="fade-right" data-aos-delay="200">
-                    <img src="media/Man in Gray Shirt.jpg" alt="Man in a suit with arms crossed, striking a confident success pose">
+                    <img src="media/Man in Gray Shirt.jpg" alt="Mathias Sant'Anna in a gray shirt looking professional">
                 </div>
                 <div class="about-content" data-aos="fade-left" data-aos-delay="400">
                     <h2>Bridging Finance and Technology with a Global Perspective</h2>
@@ -197,46 +206,46 @@
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="media/LotR Collect Banner 400x200.png" alt="Project 1">
+                        <img src="media/LotR Collect Banner 400x200.png" alt="Lord of the Rings Collectibles e-commerce platform">
                     </div>
                     <div class="project-content">
                         <h3>Lord Of The Rings Collectibles</h3>
                         <p>This is a <strong>fully functional e-commerce platform</strong> designed for fans of the iconic Lord of the Rings franchise. Developed as a Full Stack Django application, the site provides a seamless shopping experience where users can browse, search, and purchase high-quality collectibles, statues, and memorabilia.</p>
                         <p><strong>Technologies:</strong> HTML, CSS (Bootstrap), JavaScript, Python(Django), PostgreSQL(Heroku), Stripe integration and more (check Read.Me file of GitHub project).</p>
                         <div class="project-links">
-                            <a href="https://github.com/Mathias-SantAnna/lotr-collectibles" class="btn btn-secondary">View Code</a>
+                            <a href="https://github.com/Mathias-SantAnna/lotr-collectibles" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View Code</a>
                         </div>
                     </div>
                 </div>
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="media/SpotyshareList mockup.png" alt="Project 2">
+                        <img src="media/SpotyshareList mockup.png" alt="Spoty Share List web application">
                     </div>
                     <div class="project-content">
                         <h3>Spoty Share List</h3>
                         <p>It's a responsive web application, easy-to-use app that helps folks share and discover Spotify playlists. Users can make, change, and browse playlists, letting music fans connect and share their favorite tunes.🎶 </p>
                         <p><strong>Technologies:</strong> HTML, CSS, JavaScript, MongoDB, Flask, Python and more.</p>
                         <div class="project-links">
-                            <a href="https://github.com/Mathias-SantAnna/Spoty-Share-List" class="btn btn-secondary">View Code</a>
+                            <a href="https://github.com/Mathias-SantAnna/Spoty-Share-List" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View Code</a>
                         </div>
                     </div>
                 </div>
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="media/PokeCardsGame.jpeg" alt="Project 3">
+                        <img src="media/PokeCardsGame.jpeg" alt="PokeCards Memory Card Game">
                     </div>
                     <div class="project-content">
                         <h3>PokeCards - Memory Card Game</h3>
                         <p>PokeCards is an interactive memory card game where players match pairs of Pokémon-themed cards. The game is built using HTML, CSS, and JavaScript. It challenges players to find all matching pairs within a limited number of moves while tracking their score and time. 🎮</p>
                         <p><strong>Technologies:</strong> HTML, CSS, JavaScript, MongoDB, Flask, Python</p>
                         <div class="project-links">
-                            <a href="https://github.com/Mathias-SantAnna/PokeCards" class="btn btn-secondary">View Code</a>
+                            <a href="https://github.com/Mathias-SantAnna/PokeCards" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View Code</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div style="text-align: center; margin-top: 40px;">
-                <a href="https://github.com/Mathias-SantAnna" class="btn">See More Projects on GitHub</a>
+                <a href="https://github.com/Mathias-SantAnna" class="btn" target="_blank" rel="noopener noreferrer">See More Projects on GitHub</a>
             </div>
         </div>
     </section>
@@ -259,26 +268,26 @@
                     </div>
                     <div class="contact-item">
                         <i class="fab fa-linkedin"></i>
-                        <a href="https://www.linkedin.com/in/mathias-santanna/" target="_blank">linkedin.com/in/mathias-santanna</a>
+                        <a href="https://www.linkedin.com/in/mathias-santanna/" target="_blank" rel="noopener noreferrer">linkedin.com/in/mathias-santanna</a>
                     </div>
                     <div class="contact-item">
                         <i class="fab fa-github"></i>
-                        <a href="https://github.com/Mathias-SantAnna" target="_blank">github.com/Mathias-SantAnna</a>
+                        <a href="https://github.com/Mathias-SantAnna" target="_blank" rel="noopener noreferrer">github.com/Mathias-SantAnna</a>
                     </div>
                 </div>
                 <div class="contact-form">
                     <h3>Send Me a Message</h3>
-                    <form id="contactForm">
-                        <div class="form-group">
+                    <form id="contactForm" onsubmit="return handleFormSubmit(event)">
+                        <div class="form-group" style="--i:1;">
                             <input type="text" class="form-control" placeholder="Your Name" required>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group" style="--i:2;">
                             <input type="email" class="form-control" placeholder="Your Email" required>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group" style="--i:3;">
                             <input type="text" class="form-control" placeholder="Subject">
                         </div>
-                        <div class="form-group">
+                        <div class="form-group" style="--i:4;">
                             <textarea class="form-control" placeholder="Your Message" required></textarea>
                         </div>
                         <button type="submit" class="btn">Send Message</button>
@@ -295,7 +304,7 @@
             <div class="footer-about">
                 <h3>Made by Mathias Sant'Anna 🇧🇷</h3>
                 <p>Versatile Full Stack Developer with finance expertise and multicultural insights, crafting solutions that align business requirements with technical implementation.</p>
-                <p>Credits: Photo by <a href="https://unsplash.com/@lukepeters">Luke Peters</a> on <a href="https://unsplash.com/">Unsplash</a></p>
+                <p>Credits: Photo by <a href="https://unsplash.com/@lukepeters" target="_blank" rel="noopener noreferrer">Luke Peters</a> on <a href="https://unsplash.com/" target="_blank" rel="noopener noreferrer">Unsplash</a></p>
             </div>
             <div class="footer-links">
                 <h3>Quick Links</h3>
@@ -310,12 +319,37 @@
             </div>
             <div class="footer-social">
                 <h3>Connect With Me</h3>
-                <!-- Social links would go here -->
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/mathias-santanna/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Mathias-SantAnna" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                </div>
             </div>
         </div>
     </div>
 </footer>
-<!-- Script -->
+
+<!-- Script for form handling -->
+<script>
+function handleFormSubmit(event) {
+    event.preventDefault();
+    // Simple form validation
+    const form = document.getElementById('contactForm');
+    const name = form.querySelector('input[type="text"]').value;
+    const email = form.querySelector('input[type="email"]').value;
+    const message = form.querySelector('textarea').value;
+    
+    if(name && email && message) {
+        // Here you would typically send the data to a server
+        // For now, we'll just show an alert
+        alert('Thank you for your message! I will get back to you soon.');
+        form.reset();
+    }
+    
+    return false;
+}
+</script>
+
+<!-- Main animations script -->
 <script src="animations.js"></script>
 </body>
 </html>

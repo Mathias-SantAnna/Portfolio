@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Add AOS (Animate On Scroll) library -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 </head>
 <body>
     <!-- Header -->
@@ -26,39 +29,41 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero Section with animation -->
     <section id="home" class="hero">
         <div class="container">
-            <div class="hero-content">
+            <div class="hero-content" data-aos="fade-right" data-aos-delay="200">
                 <h1>Olá, I'm <span class="highlight">Mathias</span> Sant'Anna</h1>
-                <p>Full Stack Developer with a unique blend of <span class="highlight">financial expertise</span> and <span class="highlight">multicultural perspective</span>. I build elegant, functional solutions that bridge the gap between business needs and technical implementation.</p>
-                <a href="#contact" class="btn">Contact Me</a>
-                <a href="#projects" class="btn">My Work</a>
+                <p data-aos="fade-up" data-aos-delay="400">Full Stack Developer with a unique blend of <span class="highlight">financial expertise</span> and <span class="highlight">multicultural perspective</span>. I build elegant, functional solutions that bridge the gap between business needs and technical implementation.</p>
+                <div data-aos="fade-up" data-aos-delay="600">
+                    <a href="#contact" class="btn">Contact Me</a>
+                    <a href="#projects" class="btn">My Work</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About Section with animation -->
     <section id="about" class="section">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <h2 class="section-title" data-aos="fade-down">About Me</h2>
             <div class="about-grid">
-                <div class="about-image">
+                <div class="about-image" data-aos="fade-right" data-aos-delay="200">
                     <img src="media/Man in Gray Shirt.jpg" alt="Man in a suit with arms crossed, striking a confident success pose">
                 </div>
-                <div class="about-content">
+                <div class="about-content" data-aos="fade-left" data-aos-delay="400">
                     <h2>Bridging Finance and Technology with a Global Perspective</h2>
                     <p>As a Brazilian professional with an Irish Stamp 4 work permit, I bring a unique cultural perspective to every project. My journey from financial operations to software development has equipped me with a valuable combination of business acumen and technical skills.</p>
                     <div class="icon-list">
-                        <div class="icon-item">
+                        <div class="icon-item" data-aos="zoom-in" data-aos-delay="600">
                             <i class="fas fa-graduation-cap"></i>
                             <span>Higher Diploma in Science in Computing - TU Dublin</span>
                         </div>
-                        <div class="icon-item">
+                        <div class="icon-item" data-aos="zoom-in" data-aos-delay="700">
                             <i class="fas fa-briefcase"></i>
                             <span>7+ years of financial industry experience</span>
                         </div>
-                        <div class="icon-item">
+                        <div class="icon-item" data-aos="zoom-in" data-aos-delay="800">
                             <i class="fas fa-globe"></i>
                             <span>Bilingual: Portuguese (Native), English (Full Professional)</span>
                         </div>
@@ -310,5 +315,7 @@
         </div>
     </div>
 </footer>
+<!-- Script -->
+<script src="animations.js"></script>
 </body>
 </html>

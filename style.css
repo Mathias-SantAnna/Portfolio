@@ -522,6 +522,145 @@ footer {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+/* Animation Styles */
+
+/* Smooth scrolling on the whole page */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header animation on scroll */
+header {
+    transition: all 0.3s ease-in-out;
+}
+
+header.scrolled {
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Section animations */
+.section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.section.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Timeline animations */
+.timeline-item {
+    opacity: 0;
+    transform: translateX(-30px);
+    animation: slideIn 0.5s ease forwards;
+    animation-play-state: paused;
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.timeline-item.in-view {
+    animation-play-state: running;
+}
+
+/* Skill cards animation */
+.skill-card {
+    transition: all 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Project cards animation */
+.project-card {
+    transition: all 0.4s ease;
+    overflow: hidden;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.project-card .project-image img {
+    transition: transform 0.7s ease;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.05);
+}
+
+.project-card.active {
+    border-color: #3498db;
+}
+
+/* Button hover effects */
+.btn {
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: -10%;
+    transform: skewX(20deg);
+    background: rgba(255, 255, 255, 0.2);
+    transition: all 0.4s ease;
+}
+
+.btn:hover:after {
+    width: 120%;
+    left: -10%;
+}
+
+/* Hero section typing animation styles */
+.hero-content h1 {
+    border-right: 2px solid transparent;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #3498db }
+}
+
+/* Fade in animation for form elements */
+.form-group {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.5s ease forwards;
+    animation-delay: calc(var(--i, 0) * 0.1s);
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Set animation delay for form elements */
+.contact-form .form-group:nth-child(1) { --i: 1; }
+.contact-form .form-group:nth-child(2) { --i: 2; }
+.contact-form .form-group:nth-child(3) { --i: 3; }
+.contact-form .form-group:nth-child(4) { --i: 4; }
+
 /* Responsive */
 @media (max-width: 992px) {
     .about-grid,

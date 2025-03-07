@@ -1,5 +1,9 @@
 # 🚀 Mathias Sant'Anna's Developer Portfolio - Where Finance Meets Code
 
+
+Check out my [live Portfolio](https://mathias-santanna.github.io/Portfolio/)!
+
+
 ## 💼 So What's This All About?
 
 Hey there! Welcome to my digital home! This isn't just your average developer portfolio—it's where my journey from spreadsheets to code blocks comes alive! After years of swimming through financial operations, I've traded my calculator for a keyboard (well, I still use both) and created this showcase of my transformation into a Full Stack Developer.
@@ -16,7 +20,7 @@ The moment you land on my page, you'll know exactly who I am—a developer with 
 
 ### 🧩 My Story (It's More Interesting Than It Sounds!)
 
-The about section isn't your typical boring bio. It's the tale of how I navigated from financial operations to coding, and why that journey makes me uniquely qualified to build solutions that actually make sense for businesses. Plus, you'll learn about my Brazilian roots and how they influence my collaborative, creative approach to problem-solving!
+The about section isn't your typical boring bio. It's the tale of how I navigated from financial operations to coding, and why that journey makes me uniquely qualified to build solutions that actually make sense for businesses. Plus, you'll learn about my Brazilian roots (we never give up!) and how they influence my collaborative, creative approach to problem-solving!
 
 ### 🛠️ Tech Toolbox
 
@@ -88,15 +92,15 @@ I'm constantly evolving this portfolio, and have plans to add:
 
 - A tech blog where I can share what I'm learning (and occasionally rant about semicolons)
 - A dark mode for late-night browsing (and to be kind to vampire recruiters)
-- Project filters for those who want to see specific types of work
+- Use a API to play music in the background (early 2000 vibes)
 - Testimonials from people who think I'm awesome (my mom will be first in line)
-- Some subtle animations that won't make your device burst into flames
+- Use React to make subtle animations that won't make your device burst into flames
 
 ## 👋 About This Mathias Guy
 
 Hi! I'm Mathias Sant'Anna, a developer who understands both balance sheets and stylesheets. I spent years in financial operations before making the leap to tech, which means I build solutions with both the user AND the business in mind.
 
-When I'm not coding, you might find me playing with my babies, trying to explain Brazilian jokes in English (they rarely translate well), or adding to my collection of many kids toys. Working with me means getting someone who takes the work seriously—but never forgets to have fun along the way!
+When I'm not coding, you might find me playing with babies, trying to juggle between studies, washing clothes or changing nappies, and playing Fifa (rarely nowadays 😅). Working with me means getting someone who takes the work seriously—but never forgets to have fun along the way!
 
 ## 📜 Legal Bits
 

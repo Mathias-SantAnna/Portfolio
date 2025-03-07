@@ -148,8 +148,9 @@
   .hero {
     height: 100vh;
     display: flex;
+    justify-content: center;
     align-items: center;
-    background: url('/api/placeholder/1200/800') center/cover; /* or your actual hero image */
+    background: url('/api/placeholder/1200/800') center/cover; 
     position: relative;
   }
   
@@ -161,6 +162,12 @@
     width: 100%;
     height: 100%;
     background: rgba(255, 255, 255, 0.9);
+  }
+
+  .hero .container {
+    max-width: 800px;     /* optional: limit width */
+    margin: 0 auto;       /* keep container centered if it shrinks */
+    text-align: left;     /* ensures text is left-aligned */
   }
   
   .hero-content {
@@ -184,8 +191,7 @@
     font-size: 1.2rem;
     margin-bottom: 30px;
     max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+
   }
   
   .hero .highlight {

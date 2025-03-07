@@ -46,18 +46,27 @@ document.addEventListener('DOMContentLoaded', function() {
     // Typing animation in the hero heading
     const heroHeading = document.querySelector('.typing-text');
     if (heroHeading) {
-      const text = "I'm Mathias Sant'Anna"; // Text to animate
-      heroHeading.innerHTML = '';
-      
+      // 1) Type plain text only (no HTML tags)
+      const text = "I'm Mathias Sant'Anna";
+      heroHeading.innerHTML = ''; 
+  
       let i = 0;
-      const typeWriter = () => {
+      function typeWriter() {
         if (i < text.length) {
           heroHeading.innerHTML += text.charAt(i);
           i++;
-          setTimeout(typeWriter, 50); // Adjust typing speed
+          setTimeout(typeWriter, 50); // typing speed
+        } else {
+          // 2) Once typing is done, highlight "Mathias"
+          const finalText = heroHeading.innerHTML.replace(
+            "Mathias", 
+            "<span class='highlight'>Mathias</span>"
+          );
+          heroHeading.innerHTML = finalText;
         }
-      };
-      // Delay before starting the typing
+      }
+  
+      // small delay to start typing
       setTimeout(typeWriter, 500);
     }
   

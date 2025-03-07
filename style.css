@@ -198,18 +198,6 @@
     gap: 20px;
     justify-content: center;
   }
-    /* Hero heading caret blink */
-    .hero-content h1 {
-        border-right: 2px solid transparent;
-        white-space: nowrap;
-        overflow: hidden;
-        animation: blink-caret 0.75s step-end infinite;
-    }
-        
-    @keyframes blink-caret {
-        from, to { border-color: transparent; }
-        50% { border-color: #3498db; }
-    }
   
   /* About Section */
   .about-grid {
@@ -641,6 +629,13 @@
 }
 
 /* Project cards animation */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 40px;
+    align-items: stretch; /* Ensures cards fill the row height */
+}
+  
 .project-card {
     display: flex;
     flex-direction: column;
@@ -667,18 +662,28 @@
 }
 
 .project-content {
-    /* Let text grow as needed */
+    /* Fill all remaining space inside the card */
     flex: 1;
+    display: flex;
+    flex-direction: column;
   }
-  
-.project-links {
-/* Push this container to the bottom of the card */
-margin-top: auto;
-display: flex;
-justify-content: center; /* horizontally center the button */
-padding-bottom: 20px;
+  .project-card p {
+    margin: 20px;
+  }
+.hero-content,
+.about-content,
+.project-card p,
+.skill-card, 
+.timeline-content{
+  text-align: left;
 }
-  
+
+.project-links {
+    margin-top: auto;          /* push to bottom */
+    display: flex;
+    justify-content: center;   /* center horizontally */
+    padding-bottom: 20px;      /* optional spacing */
+}
 
 /* Button hover effects */
 .btn {
